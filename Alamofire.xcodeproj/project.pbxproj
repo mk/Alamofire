@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DD67BDB1A5C337A00ED2280 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = F897FF4019AA800700AB5182 /* Alamofire.swift */; };
+		4DD67BDC1A5C338100ED2280 /* Alamofire.h in Headers */ = {isa = PBXBuildFile; fileRef = F8111E3819A95C8B0040E7D1 /* Alamofire.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8111E3919A95C8B0040E7D1 /* Alamofire.h in Headers */ = {isa = PBXBuildFile; fileRef = F8111E3819A95C8B0040E7D1 /* Alamofire.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F8111E6019A9674D0040E7D1 /* DownloadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8111E5B19A9674D0040E7D1 /* DownloadTests.swift */; };
 		F8111E6119A9674D0040E7D1 /* ParameterEncodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8111E5C19A9674D0040E7D1 /* ParameterEncodingTests.swift */; };
@@ -30,6 +32,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4DD67BBC1A5C2A4800ED2280 /* Alamofire copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Alamofire copy-Info.plist"; path = "/Users/mk/code/Alamofire/Alamofire copy-Info.plist"; sourceTree = "<absolute>"; };
+		4DD67BC21A5C2C7300ED2280 /* AlamofireOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AlamofireOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DD67BC51A5C2C7300ED2280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../AlamofireOSX/Info.plist; sourceTree = "<group>"; };
 		F8111E3319A95C8B0040E7D1 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8111E3719A95C8B0040E7D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8111E3819A95C8B0040E7D1 /* Alamofire.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Alamofire.h; sourceTree = "<group>"; };
@@ -47,6 +52,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		4DD67BBE1A5C2C7300ED2280 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8111E2F19A95C8B0040E7D1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -70,6 +82,7 @@
 				F8111E3519A95C8B0040E7D1 /* Source */,
 				F8111E3F19A95C8B0040E7D1 /* Tests */,
 				F8111E3419A95C8B0040E7D1 /* Products */,
+				4DD67BBC1A5C2A4800ED2280 /* Alamofire copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +91,7 @@
 			children = (
 				F8111E3319A95C8B0040E7D1 /* Alamofire.framework */,
 				F8111E3E19A95C8B0040E7D1 /* AlamofireTests.xctest */,
+				4DD67BC21A5C2C7300ED2280 /* AlamofireOSX.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				F8111E4119A95C8B0040E7D1 /* Info.plist */,
+				4DD67BC51A5C2C7300ED2280 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -127,6 +142,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		4DD67BBF1A5C2C7300ED2280 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DD67BDC1A5C338100ED2280 /* Alamofire.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8111E3019A95C8B0040E7D1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -138,6 +161,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		4DD67BC11A5C2C7300ED2280 /* AlamofireOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DD67BD51A5C2C7300ED2280 /* Build configuration list for PBXNativeTarget "AlamofireOSX" */;
+			buildPhases = (
+				4DD67BBD1A5C2C7300ED2280 /* Sources */,
+				4DD67BBE1A5C2C7300ED2280 /* Frameworks */,
+				4DD67BBF1A5C2C7300ED2280 /* Headers */,
+				4DD67BC01A5C2C7300ED2280 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlamofireOSX;
+			productName = AlamofireOSX;
+			productReference = 4DD67BC21A5C2C7300ED2280 /* AlamofireOSX.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		F8111E3219A95C8B0040E7D1 /* Alamofire */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8111E4619A95C8B0040E7D1 /* Build configuration list for PBXNativeTarget "Alamofire" */;
@@ -183,6 +224,9 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = Alamofire;
 				TargetAttributes = {
+					4DD67BC11A5C2C7300ED2280 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
 					F8111E3219A95C8B0040E7D1 = {
 						CreatedOnToolsVersion = 6.0;
 					};
@@ -204,12 +248,20 @@
 			projectRoot = "";
 			targets = (
 				F8111E3219A95C8B0040E7D1 /* Alamofire */,
+				4DD67BC11A5C2C7300ED2280 /* AlamofireOSX */,
 				F8111E3D19A95C8B0040E7D1 /* AlamofireTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		4DD67BC01A5C2C7300ED2280 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8111E3119A95C8B0040E7D1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -227,6 +279,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		4DD67BBD1A5C2C7300ED2280 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DD67BDB1A5C337A00ED2280 /* Alamofire.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8111E2E19A95C8B0040E7D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -261,6 +321,49 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		4DD67BD61A5C2C7300ED2280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AlamofireOSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4DD67BD71A5C2C7300ED2280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = AlamofireOSX/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		F8111E4419A95C8B0040E7D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -416,6 +519,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		4DD67BD51A5C2C7300ED2280 /* Build configuration list for PBXNativeTarget "AlamofireOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DD67BD61A5C2C7300ED2280 /* Debug */,
+				4DD67BD71A5C2C7300ED2280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F8111E2D19A95C8B0040E7D1 /* Build configuration list for PBXProject "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
